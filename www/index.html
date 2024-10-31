@@ -2,9 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium car rental services offering luxury vehicles, SUVs, and sports cars">
+    <title>CarRental - Premium Car Rental Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/lebla%20logo%20vektori.png" alt="CarRental Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#fleet">Fleet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-primary" href="#book">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container h-100">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h1>Your Journey Begins Here</h1>
+                <p class="lead">Premium cars for any occasion. Easy booking, flexible terms, and outstanding service.</p>
+                <div class="hero-buttons">
+                    <a href="#fleet" class="btn btn-primary btn-lg">View Our Fleet</a>
+                    <a href="#contact" class="btn btn-outline-primary btn-lg">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <img src="images/hero/hero-car.jpg" alt="Luxury Car" class="hero-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fleet Section -->
+<section id="fleet" class="section-padding">
+    <div class="container">
+        <h2 class="section-title">Our Premium Fleet</h2>
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="car-card">
+                    <img src="images/cars/car1.jpg" class="card-img-top" alt="Luxury Sedan" loading="lazy">
+                    <div class="card-body">
+                        <h3>Luxury Sedan</h3>
+                        <p>Experience ultimate comfort with our premium sedan.</p>
+                        <div class="card-footer">
+                            <span class="price">$99/day</span>
+                            <a href="#book" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More car cards... -->
+        </div>
+    </div>
+</section>
+
+<!-- Fleet Section -->
+<section id="contact" class="section-padding">
+    <div class="container">
+        <h2 class="section-title">Our Premium Fleet</h2>
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up">
+                <iframe
+                        width="600"
+                        height="450"
+                        style="border:0"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+    &q=Space+Needle,Seattle+WA">
+                </iframe>
+            </div>
+            <!-- More car cards... -->
+        </div>
+    </div>
+</section>
+
+<!-- Additional sections (Services, Testimonials, Contact) follow the same pattern -->
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-3">
+                <h5>CarRental</h5>
+                <p>Premium car rental services for your needs.</p>
+            </div>
+            <!-- Footer columns... -->
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CarRental. All rights reserved.</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-3">
+                <a href="#">Privacy Policy</a>
+            </div>
+            <!-- Footer links... -->
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

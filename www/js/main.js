@@ -40,3 +40,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// Copyright year
+const copyrightYear = document.getElementById('copyright-year');
+if (copyrightYear) {
+  copyrightYear.textContent = new Date().getFullYear();
+}

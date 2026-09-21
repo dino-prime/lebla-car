@@ -154,6 +154,21 @@ body {
     color: white;
 }
 
+.company-info {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.company-info h5 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin: 2rem 0 0;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;

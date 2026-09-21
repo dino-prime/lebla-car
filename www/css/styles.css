@@ -164,6 +164,12 @@ body {
     margin-bottom: 1rem;
 }
 
+.cjenik-footer {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    margin-top: 2.5rem;
+}
+
 .footer hr {
     border-color: rgba(255, 255, 255, 0.2);
     margin: 2rem 0 0;

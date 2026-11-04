@@ -16,6 +16,11 @@ body {
     padding: 5rem 0;
 }
 
+/* Anchor links: keep section headings clear of the fixed navbar */
+section[id] {
+    scroll-margin-top: 50px;
+}
+
 .section-title {
     text-align: center;
     margin-bottom: 3rem;

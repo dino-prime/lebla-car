@@ -52,8 +52,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#location">Kako do nas</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontakt</a>
+                </li>
                 <li class="nav-item ms-lg-3">
-                    <a class="btn btn-primary" href="#contact">Pošaljite upit</a>
+                    <a class="btn btn-primary" href="#rezervacija"><i class="bi bi-calendar-check me-2"></i>Rezervirajte online</a>
                 </li>
             </ul>
         </div>
@@ -69,8 +72,8 @@
                 <p class="lead">U ponudi imamo i veća, udobnija vozila idealna za više putnika i duža putovanja.</p>
                 <p class="small text-muted">Sidrena cijena 10.09.2026. - 40 eura.</p>
                 <div class="hero-buttons">
-                    <a href="#location" class="btn btn-outline-primary btn-lg">Kako do nas</a>
-                    <a href="#contact" class="btn btn-primary btn-lg">Kontakt</a>
+                    <a href="#rezervacija" class="btn btn-primary btn-lg"><i class="bi bi-calendar-check me-2"></i>Rezervirajte</a>
+                    <a href="#contact" class="btn btn-outline-primary btn-lg">Kontakt</a>
                 </div>
             </div>
             <div class="col-lg-6 justify-content-center align-items-center" data-aos="fade-left">
@@ -89,8 +92,8 @@
                 <p class="lead">U ponudu smo dodali i Peugeot 107. Iznimno ekonomičan i pouzdan gradski automobil.</p>
                 <p class="small text-muted">Sidrena cijena 10.09.2026. - 35 eura.</p>
                 <div class="hero-buttons">
-                    <a href="#location" class="btn btn-outline-primary btn-lg">Kako do nas</a>
-                    <a href="#contact" class="btn btn-primary btn-lg">Kontakt</a>
+                    <a href="#rezervacija" class="btn btn-primary btn-lg"><i class="bi bi-calendar-check me-2"></i>Rezervirajte</a>
+                    <a href="#contact" class="btn btn-outline-primary btn-lg">Kontakt</a>
                 </div>
             </div>
             <div class="col-lg-6 justify-content-center align-items-center" data-aos="fade-left">
@@ -109,8 +112,8 @@
                 <p class="lead">Novo u ponudi: Renault Trafic, putnički kombi 8+1 s duplom klimom. Idealan za grupna putovanja, izlete i prijevoz cijele obitelji ili ekipe.</p>
                 <p class="small text-muted">Sidrena cijena 01.11.2026. - 80 eura.</p>
                 <div class="hero-buttons">
-                    <a href="#location" class="btn btn-outline-primary btn-lg">Kako do nas</a>
-                    <a href="#contact" class="btn btn-primary btn-lg">Kontakt</a>
+                    <a href="#rezervacija" class="btn btn-primary btn-lg"><i class="bi bi-calendar-check me-2"></i>Rezervirajte</a>
+                    <a href="#contact" class="btn btn-outline-primary btn-lg">Kontakt</a>
                 </div>
             </div>
             <div class="col-lg-6 justify-content-center align-items-center" data-aos="fade-left">
@@ -143,6 +146,22 @@
 <!--    </div>-->
 <!--</section>-->
 
+<!-- Rezervacija (rezerv-ant.eu) -->
+<section id="rezervacija" class="section-padding">
+    <div class="container">
+        <h2 class="section-title">Rezervacija</h2>
+        <div class="d-flex justify-content-center" data-aos="fade-up">
+            <iframe
+              src="https://rezerv-ant.eu/najam/leblacar?ugradnja=1"
+              title="Rezervacija termina"
+              data-rezervant
+              loading="lazy"
+              style="width:100%;max-width:760px;height:900px;border:0"
+            ></iframe>
+        </div>
+    </div>
+</section>
+
 <!-- Fleet Section -->
 <section id="location" class="section-padding">
     <div class="container">
@@ -172,6 +191,8 @@
                     <p><i class="bi bi-telephone"></i><a href="tel:+385992684715">+385 99 268 4715</a></p>
                     <p><i class="bi bi-envelope"><a href="mailto:lebla.rentacar@gmail.com">lebla.rentacar@gmail.com</a></i>
                 </div>
+                <p class="mt-4 mb-2">Ili rezervirajte vozilo online u nekoliko klikova:</p>
+                <a href="#rezervacija" class="btn btn-primary"><i class="bi bi-calendar-check me-2"></i>Rezervirajte online</a>
             </div>
         </div>
     </div>
@@ -241,5 +262,16 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
+<!-- Rezerv-ant: automatska visina iframea -->
+<script>
+  window.addEventListener("message", function (poruka) {
+    if (poruka.origin !== "https://rezerv-ant.eu") return;
+    if (!poruka.data || poruka.data.rezervant !== "visina") return;
+    document.querySelectorAll("iframe[data-rezervant]").forEach(function (okvir) {
+      if (okvir.contentWindow === poruka.source)
+        okvir.style.height = poruka.data.visina + "px";
+    });
+  });
+</script>
 </body>
 </html>

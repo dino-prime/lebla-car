@@ -149,13 +149,13 @@ section[id] {
     padding: 4rem 0 2rem;
 }
 
-.footer a {
+.footer a:not(.btn) {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     transition: var(--transition);
 }
 
-.footer a:hover {
+.footer a:not(.btn):hover {
     color: white;
 }
 
